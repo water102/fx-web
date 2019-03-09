@@ -5,7 +5,7 @@ import {
     fxLogger
 } from '@water102/fx-common';
 
-import fxCookies from './fx.cookies';
+import {fxCookies} from './fx.cookies';
 
 class FxWebUtil {
     blockElement(el, message) {

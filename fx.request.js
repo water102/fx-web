@@ -1,14 +1,15 @@
 import { fxCommonUtil } from '@water102/fx-common';
-import fxDomHelper from './fx.dom-helper';
+import { fxDomHelper } from './fx.dom-helper';
 
 class FxRequest {
     loadStyles() {
         const linkEls = document.querySelectorAll('link[data-href]');
         linkEls.forEach(el => {
-            const url = fxDomHelper.getDataAttbute(el, 'href');
+            const url = fxDomHelper.getDataAttribute(el, 'href');
             const elId = fxCommonUtil.hashCode(url);
-            styleEl.id = elId;
-            styleEl.href = url;
+            el.id = elId;
+            el.href = url;
+            fxDomHelper.removeDataAttribute(el, 'href');
         });
     }
 
@@ -27,7 +28,6 @@ class FxRequest {
             styleEl.media = 'all';
             styleEl.onload = resolve;
             styleEl.href = url;
-            fxDomHelper.setDataAttbute(styleEl, 'url', url);
 
             document
                 .head
@@ -48,7 +48,6 @@ class FxRequest {
             scriptEl.type = 'text/javascript';
             scriptEl.onload = resolve;
             scriptEl.src = url;
-            fxDomHelper.setDataAttbute(scriptEl, 'url', url);
 
             document
                 .head

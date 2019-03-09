@@ -1,5 +1,5 @@
 import { fxCommonUtil } from '@water102/fx-common';
-import fxImages from './fx.images';
+import {fxImages} from './fx.images';
 
 class FxNotification {
     constructor() {

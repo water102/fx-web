@@ -1,6 +1,6 @@
 import { fxLogger, fxCommonUtil } from '@water102/fx-common';
 
-import fxAuth from './fx.auth';
+import {fxAuth} from './fx.auth';
 
 class FxSocket {
     constructor() {
