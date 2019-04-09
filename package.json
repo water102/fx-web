@@ -1,6 +1,6 @@
 {
   "name": "@water102/fx-web",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,16 +9,16 @@
     "publish:all": "webpack --config webpack.config.app --color --progress --mode production"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/register": "^7.0.0",
-    "autoprefixer": "^9.4.7",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.5",
-    "clean-webpack-plugin": "^2.0.0",
-    "copy-webpack-plugin": "^5.0.0",
+    "clean-webpack-plugin": "^2.0.1",
+    "copy-webpack-plugin": "^5.0.2",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
     "gulp": "^4.0.0",
@@ -34,8 +34,8 @@
     "terser-webpack-plugin": "^1.2.1",
     "to-string-loader": "^1.1.5",
     "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.0",
     "webpack-merge": "^4.2.1"
   },
   "repository": {
@@ -49,9 +49,9 @@
   },
   "homepage": "https://github.com/water102/fx-web#readme",
   "dependencies": {
-    "@water102/fx-common": "^1.0.4",
+    "@water102/fx-common": "^1.0.7",
     "block-ui": "^2.70.1",
-    "bootbox": "^5.0.1",
+    "bootbox": "^5.1.0",
     "is_js": "^0.9.0",
     "jquery": "^3.3.1",
     "lodash": "^4.17.11",

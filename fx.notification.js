@@ -17,6 +17,7 @@ class FxNotification {
         window.Noty = libs[0].default || libs[0];
         Noty.overrideDefaults({
             type: 'success',
+            layout: 'topRight',
             timeout: this.timeout,
             theme: 'bootstrap-v4',
             closeWith: ['click', 'button']
