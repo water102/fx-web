@@ -12,6 +12,7 @@ class FxNotification {
   async requireLibs() {
     const libs = await Promise.all([
       import('noty'),
+      import('noty/lib/noty.css'),
       import('noty/lib/themes/bootstrap-v4.css')
     ]);
     window.Noty = libs[0].default || libs[0];
@@ -24,15 +25,15 @@ class FxNotification {
     });
   }
 
-  async requireNoty(text, type) {
-    if (this.notificationPermission === 'granted') {
-      this.spawnNotification(text, type);
+  async requireNoty(title, body, type, showInWebContent) {
+    if (!showInWebContent && this.notificationPermission === 'granted') {
+      this.spawnNotification(title, body, type);
     } else {
       if (fxCommonUtil.isNullOrUndefined(window.Noty)) {
         await this.requireLibs();
       }
       new Noty({
-        text,
+        text: `${title}<br/>${body}`,
         type
       }).show();
     }
@@ -96,24 +97,24 @@ class FxNotification {
     noty.show();
   }
 
-  alert(title, body) {
-    this.requireNoty(title, body, 'alert');
+  alert(title, body, showInWebContent = false) {
+    this.requireNoty(title, body, 'alert', showInWebContent);
   }
 
-  success(title, body) {
-    this.requireNoty(title, body, 'success');
+  success(title, body, showInWebContent = false) {
+    this.requireNoty(title, body, 'success', showInWebContent);
   }
 
-  error(title, body) {
-    this.requireNoty(title, body, 'error');
+  error(title, body, showInWebContent = false) {
+    this.requireNoty(title, body, 'error', showInWebContent);
   }
 
-  warning(title, body) {
-    this.requireNoty(title, body, 'warning');
+  warning(title, body, showInWebContent = false) {
+    this.requireNoty(title, body, 'warning', showInWebContent);
   }
 
-  info(title, body) {
-    this.requireNoty(title, body, 'info');
+  info(title, body, showInWebContent = false) {
+    this.requireNoty(title, body, 'info', showInWebContent);
   }
 }
 export const fxNotification = new FxNotification();
