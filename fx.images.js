@@ -30,17 +30,17 @@ class FxImages {
   getUrl(imageName) {
     switch (imageName) {
       case 'alert':
-        return '/asstes/default-images/alert_32x32.png';
+        return '/assets/default-images/alert_32x32.png';
       case 'success':
-        return '/asstes/default-images/success_32x32.png';
+        return '/assets/default-images/success_32x32.png';
       case 'error':
-        return '/asstes/default-images/error_32x32.png';
+        return '/assets/default-images/error_32x32.png';
       case 'warning':
-        return '/asstes/default-images/warning_32x32.png';
+        return '/assets/default-images/warning_32x32.png';
       case 'info':
-        return '/asstes/default-images/info_32x32.png';
+        return '/assets/default-images/info_32x32.png';
       default:
-        return '/asstes/default-images/default-image.svg';
+        return '/assets/default-images/default-image.svg';
     }
   }
 }
