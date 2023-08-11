@@ -1,12 +1,15 @@
 {
-  "name": "@fx/web",
+  "name": "@water102/fx-web",
   "version": "2.0.0",
-  "private": true,
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
     "src": "src",
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/water102/fx-web.git"
   },
   "scripts": {
     "build": "tsc --build",
@@ -15,7 +18,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@fx/common": "^2.0.0"
+    "@water102/fx-common": "^2.0.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.3",
