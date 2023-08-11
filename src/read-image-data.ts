@@ -1,9 +1,10 @@
 export function readImageData(file: File) {
-  return new Promise((resolve, _reject) => {
+  return new Promise<string>((resolve, _reject) => {
     const reader = new FileReader();
 
     reader.onload = (e: ProgressEvent<FileReader>) => {
-      resolve(e?.target?.result ?? '');
+      const imageData = e?.target?.result ?? ''
+      resolve(imageData as string);
     };
 
     reader.readAsDataURL(file);
