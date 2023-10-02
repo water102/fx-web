@@ -1,4 +1,8 @@
-export function updateQueryString(uri: string, key: string, value: string | number | undefined) {
+export function updateQueryString(
+  uri: string,
+  key: string,
+  value: string | number | undefined
+) {
   const re = new RegExp('([?&])' + key + '=.*?(&|#|$)', 'i');
   if (value === undefined) {
     if (uri.match(re)) {
@@ -15,9 +19,7 @@ export function updateQueryString(uri: string, key: string, value: string | numb
         hash = uri.replace(/.*#/, '#');
         uri = uri.replace(/#.*/, '');
       }
-      let separator = uri.indexOf('?') !== -1 ?
-        '&' :
-        '?';
+      const separator = uri.indexOf('?') !== -1 ? '&' : '?';
       return uri + separator + key + '=' + value + hash;
     }
   }

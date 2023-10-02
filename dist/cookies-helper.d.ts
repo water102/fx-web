@@ -5,4 +5,3 @@ export declare class CookiesHelper {
     hasItem(sKey: string): boolean;
     keys(): string[];
 }
-//# sourceMappingURL=cookies-helper.d.ts.map

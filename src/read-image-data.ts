@@ -3,7 +3,7 @@ export function readImageData(file: File) {
     const reader = new FileReader();
 
     reader.onload = (e: ProgressEvent<FileReader>) => {
-      const imageData = e?.target?.result ?? ''
+      const imageData = e?.target?.result ?? '';
       resolve(imageData as string);
     };
 
