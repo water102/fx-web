@@ -18,6 +18,7 @@
     "prettier"
   ],
   "rules": {
+    "@typescript-eslint/ban-ts-comment": "warn",
     "prettier/prettier": 1,
     "indent": [
       "warn",
@@ -32,7 +33,7 @@
       "error",
       "always"
     ],
-    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": [
       "off",
       {

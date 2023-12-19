@@ -1,6 +1,7 @@
-export const bootstrap = (win: Window, doc: Document) =>
-  (render: (win: Window, doc: Document) => void) => {
-    switch (doc.readyState) {
+export const bootstrap =
+  (win: Window, doc: Document) =>
+    (render: (win: Window, doc: Document) => void) => {
+      switch (doc.readyState) {
       case 'loading': {
         const domContentLoaded = 'DOMContentLoaded';
 
@@ -16,5 +17,5 @@ export const bootstrap = (win: Window, doc: Document) =>
       case 'complete':
       default:
         render(win, doc);
-    }
-  };
+      }
+    };
