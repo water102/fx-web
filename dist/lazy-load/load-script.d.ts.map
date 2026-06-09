@@ -1,0 +1,1 @@
+{"version":3,"file":"load-script.d.ts","sourceRoot":"","sources":["../../src/lazy-load/load-script.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,KAAK,OAAO,GAAG;IACb,GAAG,EAAE,MAAM,CAAC;IACZ,SAAS,CAAC,EAAE,MAAM,CAAC;IACnB,WAAW,CAAC,EAAE,MAAM,CAAC;IACrB,cAAc,CAAC,EAAE,MAAM,CAAC;CACzB,CAAC;AAEF;;;;;;;;;;;GAWG;AACH,eAAO,MAAM,UAAU,GAAI,SAAS,OAAO,KAAG,OAAO,CAAC,IAAI,CAsCzD,CAAA"}
