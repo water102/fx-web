@@ -3,12 +3,34 @@
   "version": "4.0.7",
   "engines": {
     "npm": ">=10.9",
-    "node": ">=23.3"
+    "node": ">=20"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typings": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./copy-to-clipboard": {
+      "types": "./dist/copy-to-clipboard.d.ts",
+      "import": "./dist/copy-to-clipboard.js",
+      "default": "./dist/copy-to-clipboard.js"
+    },
+    "./query-string-helpers": {
+      "types": "./dist/query-string-helpers.d.ts",
+      "import": "./dist/query-string-helpers.js",
+      "default": "./dist/query-string-helpers.js"
+    },
+    "./storage": {
+      "types": "./dist/storage/index.d.ts",
+      "import": "./dist/storage/index.js",
+      "default": "./dist/storage/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
