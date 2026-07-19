@@ -29,6 +29,16 @@
       "types": "./dist/storage/index.d.ts",
       "import": "./dist/storage/index.js",
       "default": "./dist/storage/index.js"
+    },
+    "./image-object-url-cache": {
+      "types": "./dist/image-object-url-cache.d.ts",
+      "import": "./dist/image-object-url-cache.js",
+      "default": "./dist/image-object-url-cache.js"
+    },
+    "./protocol-worker-client": {
+      "types": "./dist/protocol-worker-client.d.ts",
+      "import": "./dist/protocol-worker-client.js",
+      "default": "./dist/protocol-worker-client.js"
     }
   },
   "files": [

@@ -19,3 +19,5 @@ export * from './scroll-viewport-to';
 export * from './show-popup';
 export { CookiesHelper } from './cookies-helper';
 export * from './worker-request-pool';
+export * from './image-object-url-cache';
+export * from './protocol-worker-client';
