@@ -65,9 +65,9 @@
   },
   "peerDependencies": {
     "@water102/fx-common": "^4.0.7",
-    "dayjs": "^1.11.21",
+    "dayjs": "^1.11.23",
     "nanoid": "^6.0.1",
     "ramda": "^0.32.0",
-    "uuid": "^14.0.1"
+    "uuid": "^14.0.2"
   }
 }
